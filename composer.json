@@ -1,0 +1,35 @@
+{
+    "name": "cswiley/laravel-style-guide-builder",
+    "description": "Simple style guide builder for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cam wiley",
+            "email": "cswiley1@gmail.com"
+        }
+    ],
+    "require": {
+        "php"                                 : ">=7.0.0",
+        "laravel/framework"                   : ">5.5.0",
+        "laravel/tinker"                      : "~1.0",
+        "laravelcollective/html"              : "^5.5",
+        "davejamesmiller/laravel-breadcrumbs" : "^4.2"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Cswiley\\StyleGuide\\" : "src"
+        }
+    },
+    "extra"    : {
+        "laravel" : {
+            "providers" : [
+                "Cswiley\\StyleGuide\\StyleGuideServiceProvider"
+            ],
+            "aliases"   : {
+                "StyleGuide" : "Cswiley\\StyleGuide\\StyleGuide"
+            }
+        }
+    },
+    "minimum-stability" : "dev",
+    "prefer-stable"     : true
+}
